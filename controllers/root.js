@@ -1,3 +1,5 @@
+import cool from 'cool-ascii-faces';
+
 const getRequestData = req => ({
     method: req.method,
     path: req.path,
@@ -5,7 +7,7 @@ const getRequestData = req => ({
     host: req.hostname,
     baseUrl: req.baseUrl,
     ip: req.ip,
-    message: `Handling ${req.method} request`
+    message: `Handling ${req.method} request from @Rajan Maharjan's API End : ${cool()}`
 });
 
 const getRoot = async (req, res) => {
